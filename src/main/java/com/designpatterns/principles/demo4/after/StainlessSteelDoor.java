@@ -1,11 +1,12 @@
-package com.designpatterns.principles.Demo4.before;
+package com.designpatterns.principles.demo4.after;
 
 /**
  * @author tanyun
- * @Description 不锈钢防盗门
- * @date 2021/11/23 23:42
+ * @Description 不锈钢门
+ * @date 2021/11/25 22:21
  */
-public class StainlessSteelDoor implements SafetyDoor {
+public class StainlessSteelDoor implements AntiTheft,FireProof,WaterProof {
+
     @Override
     public void antiTheft() {
         System.out.println("防盗");
@@ -23,9 +24,9 @@ public class StainlessSteelDoor implements SafetyDoor {
 
     @Override
     public String toString() {
-        antiTheft();
-        fireProof();
-        waterProof();
+        this.antiTheft();
+        this.fireProof();
+        this.waterProof();
         return "";
     }
 }

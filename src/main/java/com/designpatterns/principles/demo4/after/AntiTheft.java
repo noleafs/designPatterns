@@ -1,4 +1,4 @@
-package com.designpatterns.principles.Demo4.after;
+package com.designpatterns.principles.demo4.after;
 
 /**
  * @author tanyun
