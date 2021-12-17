@@ -1,4 +1,4 @@
-package com.designpatterns.factory.simple_factory;
+package com.designpatterns.pattern.factory.before;
 
 /**
  * @author tanyun
@@ -16,9 +16,17 @@ public class CoffeeStore {
      * @return
      */
     public Coffee orderCoffee(String type) {
-        // 创建工厂对象,生产咖啡
-        SimpleCoffeeFactory coffeeFactory = new SimpleCoffeeFactory();
-        Coffee coffee = coffeeFactory.createCoffee(type);
+        Coffee coffee = null;
+
+        // 如果需要增加新的咖啡种类，就需要修改此代码，就违背了开闭原则
+        if (AMERICAN.equals(type)) {
+            coffee = new AmericanCoffee();
+        } else if (LATTE.equals(type)) {
+            coffee = new LatteCoffee();
+        } else {
+            throw new RuntimeException("此咖啡店没有此咖啡");
+        }
+
         // 加配料
         coffee.addMilk();
         coffee.addSugar();

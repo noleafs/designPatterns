@@ -1,4 +1,4 @@
-package com.designpatterns.factory.simple_factory;
+package com.designpatterns.pattern.factory.simple_factory;
 
 /**
  * @author tanyun
