@@ -2,7 +2,7 @@ package com.designpatterns.pattern.decorator;
 
 /**
  * @author tanyun
- * @Description 装饰者（抽象装饰者角色）
+ * @Description 装饰者（抽象装饰者角色）核心
  * @date 2021/12/29 20:25
  */
 public abstract class Garnish extends FastFood {

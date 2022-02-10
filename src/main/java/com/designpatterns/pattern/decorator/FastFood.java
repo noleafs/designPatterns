@@ -32,7 +32,7 @@ public abstract class FastFood {
 
     public void setPrice(float price) {
         this.price = price;
-    }
+}
 
     public String getDesc() {
         return desc;
