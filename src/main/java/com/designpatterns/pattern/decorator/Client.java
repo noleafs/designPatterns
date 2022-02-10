@@ -1,6 +1,7 @@
 package com.designpatterns.pattern.decorator;
 
 /**
+ * 装饰器模式
  * @author tanyun
  * @Description
  * @date 2021/12/29 20:52

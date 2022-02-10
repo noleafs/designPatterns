@@ -2,6 +2,7 @@ package com.designpatterns.pattern.adapter.object_adapter;
 
 
 /**
+ * 对象适配器
  * @author tanyun
  * @Description
  * @date 2021/12/22 20:44
